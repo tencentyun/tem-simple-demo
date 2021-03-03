@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-provider
+server:
+  port: 8004
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+management:
+  endpoint:
+    health:
+      show-details: always

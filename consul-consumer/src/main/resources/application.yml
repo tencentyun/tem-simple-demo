@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: consul-consumer
+  cloud:
+    consul:
+      discovery:
+        heartbeat:
+          enabled: true
+    loadbalancer:
+      ribbon:
+        enabled: false
+server:
+  port: 8001
+management:
+  endpoint:
+    health:
+      show-details: always
